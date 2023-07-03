@@ -1,0 +1,119 @@
+
+
+.locacion-ventana {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;;
+  background-color: #f1f1f1; /* Cambia el color de fondo según tu preferencia */
+  color: #333; /* Cambia el color del texto según tu preferencia */
+  padding: 0px; /* se elimina el padding para permitir al banner ocupar el ancho total de la ventana*/
+  /*border-radius: 8px;*/
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+}
+
+/* Estilos adicionales para personalizar la apariencia de la ventana emergente */
+
+.cerrar-ventana {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.banner-locacion img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  /*border-radius: 8px;*/
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.descripcion-locacion {
+  display: flex;
+  justify-content: space-between;
+}
+
+.galeria-imagenes {
+  width: 50%;
+  display: flex;
+  justify-content:flex-end;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.galeria-imagenes img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.descripcion-texto {
+  width: 50%;
+  align-items: flex-start;
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #333; /* Cambia el color del botón según tu preferencia */
+  color: #fff; /* Cambia el color del texto del botón según tu preferencia */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555; /* Cambia el color de fondo al pasar el mouse por encima según tu preferencia */
+}
+
+.nombre-locacion {
+  position: absolute;
+  bottom: 260px;
+  left: 0;
+  padding: 8px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Cambia el color de fondo a tu preferencia */
+  color: white; /* Cambia el color del texto a tu preferencia */
+  border-top-right-radius: 8px;
+  font-size: 40px;
+}
+
+iframe {
+  width: 100%;
+  pointer-events: none;
+}
+
+/**COSAS QUE OCURREN CUANDO SE DISPARA EL EVENTO seleccionarLocacion */
+
+.seleccionar-locacion {
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seleccionar-locacion:hover {
+  background-color: #0d47a1;
+}
+
+.seleccionar-locacion.seleccionada {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+

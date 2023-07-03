@@ -1,0 +1,60 @@
+.catalogo-locaciones-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .catalogo-locaciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .locacion-card {
+    background-color: #681616;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 250px;
+    width: calc(50% - 10px); /* Se ocupa la mitad del ancho con un margen de 10px */
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .locacion-card:hover {
+    /*transform: scale(1.1);*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .locacion-nombre {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .locacion-descripcion {
+    font-size: 14px;
+    color: #555;
+  }
+
+  /* ESTILO DE CALENDARIO USADO EN LOCACION GUARDADA*/
+
+  .calendario-container {
+    position: relative; 
+    background-color: aqua;
+  }
+  
+  .calendario-container .react-datepicker {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+  }
+  
+  
